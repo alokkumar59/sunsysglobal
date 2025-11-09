@@ -1,0 +1,166 @@
+.header,
+.topBar,
+.navbar {
+  width: 100vw; 
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d2e3c;
+  color: white;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+  padding: 0.5rem 1rem;
+  width: 100vw;
+}
+
+.topLeft span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.topRight {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.topRight a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: color 0.3s ease;
+}
+
+.topRight a:hover {
+  color: #f9b81d;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-bottom: 1px solid #eee;
+  padding: 0.8rem 1rem;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0d1e2b;
+}
+
+/* Nav Links */
+.navLinks {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #0d1e2b;
+  font-weight: 500;
+}
+
+.navLinks a:hover,
+.navLinks .active {
+  color: #f9b81d;
+}
+
+.quoteBtn {
+  background-color: #f9b81d;
+  color: #0d1e2b;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+
+.quoteBtn:hover {
+  background-color: #e2a810;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.4);
+  z-index: 1000;
+}
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    background-color: white;
+    padding: 5rem 1.5rem;
+    gap: 1.5rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1002;
+    overflow-y: auto;
+  }
+
+  .navLinks.open {
+    transform: translateX(0);
+  }
+
+  .quoteBtn {
+    align-self: flex-start;
+  }
+
+  .topBar {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 0.5rem;
+  }
+}
