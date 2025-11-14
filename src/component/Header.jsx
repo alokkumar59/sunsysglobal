@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Header.module.css";
+import { Link } from "react-router-dom";
 
 import { 
   FaPhoneAlt, FaFacebookF, FaLinkedinIn, FaInstagram, 
@@ -74,11 +75,12 @@ const Header = () => {
         </div>
 
         <nav className={`${styles.navLinks} ${menuOpen ? styles.open : ""}`}>
-  <a href="#" className={styles.active} onClick={closeMenu}>HOME</a>
-  <a href="#" onClick={closeMenu}>ABOUT</a>
-  <a href="#" onClick={closeMenu}>SERVICE</a>
-  <a href="#" onClick={closeMenu}>PROJECT</a>
-  <a href="#" onClick={closeMenu}>CONTACT</a>
+  <Link to="/" className={styles.active} onClick={closeMenu}>HOME</Link>
+  <Link to="/about" onClick={closeMenu}>ABOUT</Link>
+  <Link to="/services" onClick={closeMenu}>SERVICE</Link>
+  <Link to="/projects" onClick={closeMenu}>PROJECT</Link>
+  <Link to="/contact" onClick={closeMenu}>CONTACT</Link>
+
   <button className={styles.quoteBtn} onClick={closeMenu}>
     Get A Quote <FaArrowRight />
   </button>
