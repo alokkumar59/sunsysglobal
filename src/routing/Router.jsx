@@ -2,7 +2,10 @@ import { createBrowserRouter, Outlet } from "react-router-dom";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
 import Home from "../pages/Home";
-import About from "../pages/About"; // ← YOU FORGOT THIS
+import About from "../pages/About";
+import Service from "../pages/Service";
+import Projects from "../pages/Projects";
+import Contact from "../pages/Contact";
 
 const Layout = () => (
   <>
@@ -17,7 +20,12 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: "/", element: <Home /> },
-      { path: "/about", element: <About /> }, // ← ADD THIS ROUTE
+      { path: "/about", element: <About /> },
+      { path: "/services", element: <Service /> }, 
+      { path: "/projects", element: <Projects /> }, 
+      { path: "/contact", element: <Contact /> }, 
+
+
     ],
   },
 ]);

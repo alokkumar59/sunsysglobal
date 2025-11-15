@@ -63,12 +63,11 @@ const Header = () => {
       </div>
 
       {/* Navbar */}
-      <div className={styles.navbar}>
-        <div className={styles.logo}>
-        <img src="/assets/logo.jpg" alt="logo" />
-        <span>Sunsys</span>
-        </div>
-
+      
+<      div className={styles.navbar}>
+  <div className={styles.logo}>
+    <Link to="/"><img src="/assets/logo.jpg" alt="logo" /></Link>
+  </div>
         {/* Hamburger */}
         <div className={styles.hamburger} onClick={toggleMenu}>
           <FaEllipsisV />
@@ -81,9 +80,9 @@ const Header = () => {
   <Link to="/projects" onClick={closeMenu}>PROJECT</Link>
   <Link to="/contact" onClick={closeMenu}>CONTACT</Link>
 
-  <button className={styles.quoteBtn} onClick={closeMenu}>
+  <Link to="/contact" className={styles.quoteBtn} onClick={closeMenu}>
     Get A Quote <FaArrowRight />
-  </button>
+  </Link>
 </nav>
       </div>
     </header>
