@@ -65,15 +65,10 @@
 }
 
 .logo img {
-  width: 45px;
-  height: 45px;
+  width: 70px;
+  height: 55px;
 }
 
-.logo span {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #0d1e2b;
-}
 
 /* Nav Links */
 .navLinks {

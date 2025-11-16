@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; // make sure Link is imported
+
 import styles from "./Home.module.css";
 
 
@@ -64,8 +66,8 @@ const Home = () => {
               <p className={styles.subtitle}>{slide.subtitle}</p>
               <div className={styles.ctaGroup}>
                 <a href="#services" className={styles.btnPrimary}>Explore Solutions</a>
-                <a href="#contact" className={styles.btnGhost}>Contact Us</a>
-              </div>
+                <Link to="/contact" className={styles.btnGhost}>Contact Us</Link>
+                </div>
             </div>
           </div>
         ))}
