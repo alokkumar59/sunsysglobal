@@ -36,7 +36,7 @@ const whyCards = [
 const serviceCards = [
   { filename: "residential.jpg", title: "Residential Solar" },
   { filename: "commercial.jpg", title: "Commercial Solar" },
-  { filename: "industrial.jpg", title: "Industrial Solar" },
+  { filename: "industrial.jpg", title: "Industrial Solar " },
 ];
 
 const Home = () => {
