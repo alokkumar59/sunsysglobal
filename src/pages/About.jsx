@@ -67,7 +67,7 @@ export default function About() {
         {/* RIGHT SIDE */}
         <div className={styles.right}>
           <div className={styles.imageWrapper}>
-            <img src="/images/solar-plant.jpg" alt="Sunsys Global" />
+            <img src="/public/assets/hero/hero3.jpg.jpg" alt="Sunsys Global" />
             <div className={styles.experienceBox}>
               <h3>10+ Years</h3>
               <p>Of Solar Excellence</p>
