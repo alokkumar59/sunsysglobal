@@ -4,7 +4,7 @@ import styles from "./Service.module.css";
 
 export default function ServicesPage() {
   const services = [
-    // { title: "Solar Panel Installation", desc: "High-efficiency solar panels installed with precision engineering." },
+    { title: "Solar Panel Installation", desc: "High-efficiency solar panels installed with precision engineering." },
     { title: "Solar EPC Services", desc: "End-to-end design, procurement, and construction for large projects." },
     { title: "Rooftop Solar Systems", desc: "Affordable rooftop systems for homes, schools, and small businesses." },
     { title: "Maintenance & Repair", desc: "Scheduled and on-demand maintenance for optimized performance." },
