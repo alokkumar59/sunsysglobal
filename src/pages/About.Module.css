@@ -26,7 +26,7 @@
 }
 
 .heading span {
-  color: #f3a100;  /* Premium solar yellow */
+  color: #f3a100;
 }
 
 .desc {
@@ -43,7 +43,7 @@
 }
 
 .featureBox {
-  background: #fff;
+  background: #1d0101;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.06);
@@ -52,6 +52,7 @@
 
   opacity: 0;
   transform: translateY(30px);
+  color: #fff;              /* FIX: text visible */
 }
 
 .featureBox:hover {
@@ -105,7 +106,7 @@
   font-size: 0.9rem;
 }
 
-/* Fade-in animation for feature boxes */
+/* Animation */
 .fadeIn {
   opacity: 1 !important;
   transform: translateY(0) !important;
