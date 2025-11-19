@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./Service.module.css";
+import { Link } from "react-router-dom";
 
 export default function ServicesPage() {
   const services = [
@@ -15,7 +16,7 @@ export default function ServicesPage() {
   return (
     <div className={styles.wrapper}>
 
-      {/* HERO SECTION */}
+      {/* HERO */}
       <section className={styles.hero}>
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
@@ -42,7 +43,7 @@ export default function ServicesPage() {
             key={i}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: i * 0.1 }}
+            transition={{ delay: i * 0.08 }}
             className={styles.card}
           >
             <h3 className={styles.cardTitle}>{s.title}</h3>
@@ -66,10 +67,10 @@ export default function ServicesPage() {
           Let Sunsys Global build a world-class solar solution for you.
         </motion.p>
 
-        <button className={styles.ctaBtn}>Contact Us</button>
-      </section>
-
+        <Link to="/contact" className={styles.ctaBtn}>
+    Contact Us
+  </Link>
+</section>
     </div>
   );
 }
-
