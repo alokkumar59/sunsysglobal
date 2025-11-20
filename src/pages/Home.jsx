@@ -7,12 +7,12 @@ import styles from "./Home.module.css";
 const getHeroImages = () => {
   return [
     {
-      filename: "hero1.jpg",
+      filename: "hero1.png",
       title: "Powering a Sustainable Future",
       subtitle: "Harness the limitless energy of the sun for a cleaner tomorrow.",
     },
     {
-      filename: "hero2.jpg",
+      filename: "hero2.png",
       title: "Reliable Solar Solutions for Every Need",
       subtitle: "From homes to industries — we design systems that deliver long-term performance.",
     },
@@ -30,7 +30,7 @@ const heroSlides = getHeroImages();
 const whyCards = [
   { filename: "save-money.jpg", title: "Save Money", desc: "Reduce your electricity bills and generate your own power." },
   { filename: "eco.jpg", title: "Eco-Friendly", desc: "Clean energy solutions that help reduce carbon footprint." },
-  { filename: "reliable.jpg", title: "Reliable Energy", desc: "Consistent and sustainable energy supply for homes and businesses." },
+  { filename: "Independence.png", title: "Energy Independence", desc: "Stay protected from power cuts and rising electricity prices." },
 ];
 
 const serviceCards = [

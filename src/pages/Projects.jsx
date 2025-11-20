@@ -8,15 +8,15 @@ export default function Projects() {
     { title: "Industrial Solar Plant", desc: "500kW solar power plant for a manufacturing unit.", img: "/public/assets/servicepage/project2.png" },
     { title: "Off-Grid Solar Village", desc: "Implemented off-grid solar systems for rural households.", img: "/public/assets/servicepage/project3.png" },
     { title: "Commercial Rooftop", desc: "120kW rooftop solar system for a shopping complex.", img: "/public/assets/servicepage/project4.png" },
-    { title: "Hybrid Solar System", desc: "Hybrid on-grid & off-grid system for a remote industrial unit.", img: "/images/project5.jpg" },
-    { title: "Solar Consultancy", desc: "Complete project planning and ROI forecasting for corporate clients.", img: "/images/project6.jpg" },
+    { title: "Hybrid Solar System", desc: "Hybrid on-grid & off-grid system for a remote industrial unit.", img: "/public/assets/servicepage/project5.png" },
+    { title: "Solar Consultancy", desc: "Complete project planning and ROI forecasting for corporate clients.", img: "/public/assets/servicepage/project6.png" },
   ];
 
   const upcomingProjects = [
-    { title: "Utility Scale Solar Plant", desc: "1MW plant installation scheduled for Q2 2025.", img: "/images/project7.jpg" },
-    { title: "Rooftop Expansion Program", desc: "Expanding rooftop installations in 3 major cities.", img: "/images/project8.jpg" },
-    { title: "Remote Village Electrification", desc: "Off-grid solar setups planned for rural villages.", img: "/images/project9.jpg" },
-    { title: "Industrial Efficiency Upgrade", desc: "Retrofitting older plants with high-efficiency panels.", img: "/images/project10.jpg" },
+    { title: "Utility Scale Solar Plant", desc: "1MW plant installation scheduled for Q2 2025.", img: "/public/assets/servicepage/project7.png" },
+    { title: "Rooftop Expansion Program", desc: "Expanding rooftop installations in 3 major cities.", img: "/public/assets/servicepage/project8.png" },
+    { title: "Remote Village Electrification", desc: "Off-grid solar setups planned for rural villages.", img: "/public/assets/servicepage/project9.png" },
+    { title: "Industrial Efficiency Upgrade", desc: "Retrofitting older plants with high-efficiency panels.", img: "/public/assets/servicepage/project10.png" },
   ];
 
   useEffect(() => {
