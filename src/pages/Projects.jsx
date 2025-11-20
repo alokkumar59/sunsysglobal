@@ -3,10 +3,11 @@ import styles from "./Projects.module.css";
 
 export default function Projects() {
   const completedProjects = [
-    { title: "Rooftop Solar for School", desc: "Installed a 50kW rooftop solar system at a local school.", img: "/images/project1.jpg" },
-    { title: "Industrial Solar Plant", desc: "500kW solar power plant for a manufacturing unit.", img: "/images/project2.jpg" },
-    { title: "Off-Grid Solar Village", desc: "Implemented off-grid solar systems for rural households.", img: "/images/project3.jpg" },
-    { title: "Commercial Rooftop", desc: "120kW rooftop solar system for a shopping complex.", img: "/images/project4.jpg" },
+    { title: "Rooftop Solar for School", desc: "Installed a 50kW rooftop solar system at a local school.", img: "/public/assets/servicepage/project1.png" },
+
+    { title: "Industrial Solar Plant", desc: "500kW solar power plant for a manufacturing unit.", img: "/public/assets/servicepage/project2.png" },
+    { title: "Off-Grid Solar Village", desc: "Implemented off-grid solar systems for rural households.", img: "/public/assets/servicepage/project3.png" },
+    { title: "Commercial Rooftop", desc: "120kW rooftop solar system for a shopping complex.", img: "/public/assets/servicepage/project4.png" },
     { title: "Hybrid Solar System", desc: "Hybrid on-grid & off-grid system for a remote industrial unit.", img: "/images/project5.jpg" },
     { title: "Solar Consultancy", desc: "Complete project planning and ROI forecasting for corporate clients.", img: "/images/project6.jpg" },
   ];
