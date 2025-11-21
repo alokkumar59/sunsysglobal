@@ -100,7 +100,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* SERVICES */}
+      {}
       <section id="services" className={styles.services}>
         <div className={styles.container}>
           <h2>Our Solar Solutions</h2>
