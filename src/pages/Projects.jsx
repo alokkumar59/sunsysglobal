@@ -39,7 +39,7 @@ export default function Projects() {
   return (
     <section className={styles.projectsSection}>
       <div className={styles.container}>
-        {/* PAGE HEADER */}
+        {/* PAGE HEADER  ____ */}
         <h2 className={styles.heading}>Our Solar Projects</h2>
         <p className={styles.subheading}>
           Demonstrating quality, efficiency, and sustainability through our completed and upcoming projects.
