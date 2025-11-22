@@ -10,7 +10,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-
 .topBar {
   display: flex;
   justify-content: space-between;
@@ -48,6 +47,12 @@
   color: #f9b81d;
 }
 
+/* social icons style */
+.icon {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -58,17 +63,10 @@
   position: relative;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
 .logo img {
   width: 70px;
   height: 55px;
 }
-
 
 /* Nav Links */
 .navLinks {
