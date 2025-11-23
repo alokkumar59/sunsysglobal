@@ -70,9 +70,7 @@ const Header = () => {
           <Link to="/projects" onClick={closeMenu}>PROJECT</Link>
           <Link to="/contact" onClick={closeMenu}>CONTACT</Link>
 
-          <Link to="/contact" className={styles.quoteBtn} onClick={closeMenu}>
-            Get A Quote <FaArrowRight />
-          </Link>
+          <Link to="/contact" className={styles.quoteBtn} onClick={closeMenu}>  Get A Quote <FaArrowRight />        </Link>
         </nav>
       </div>
     </header>

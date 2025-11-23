@@ -28,11 +28,11 @@ export default function About() {
         {/* LEFT SIDE */}
         <div className={styles.left}>
           <h2 className={styles.heading}>
-            Powering a Sustainable Future with <span>Sunsys Global</span>
+            Powering a Sustainable Future with <span>Sunsys Techsol</span>
           </h2>
 
           <p className={styles.desc}>
-            Sunsys Global delivers high-performance solar solutions for homes, businesses, 
+          Sunsys Techsol delivers high-performance solar solutions for homes, businesses, 
             and industries across India. Our mission is simple — make clean energy accessible, 
             affordable, and reliable for everyone.
           </p>

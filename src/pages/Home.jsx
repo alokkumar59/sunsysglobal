@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom"; // make sure Link is imported
+import { Link } from "react-router-dom"; 
 
 import styles from "./Home.module.css";
 
@@ -60,6 +60,7 @@ const Home = () => {
             key={i}
             className={`${styles.slide} ${i === index ? styles.active : ""}`}
             style={{ backgroundImage: `url(/assets/hero/${slide.filename})` }}
+
           >
             <div className={styles.overlay}>
               <h1 className={styles.title}>{slide.title}</h1>
