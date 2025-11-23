@@ -1,14 +1,19 @@
-/* WRAPPER */
-.wrapper {
-  width: 100%;
+.page {
   background: #f9fafb;
+  width: 100%;
   font-family: 'Inter', sans-serif;
 }
 
-/* HERO */
+.container {
+  width: 90%;
+  max-width: 1250px;
+  margin: auto;
+}
+
 .hero {
-  background: linear-gradient(135deg, #facc15, #f59e0b);
-  padding: 6rem 1rem;
+  background: linear-gradient(135deg, #fde68a, #675827);
+  
+  padding: 80px 0;
   text-align: center;
   color: #1f2937;
 }
@@ -16,60 +21,58 @@
 .heroTitle {
   font-size: 3rem;
   font-weight: 800;
-  margin-bottom: 1rem;
-  letter-spacing: -1px;
 }
 
 .heroSubtitle {
   font-size: 1.2rem;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 1rem auto 0;
   color: #374151;
 }
 
-/* GRID */
-.gridSection {
-  padding: 5rem 1rem;
-  max-width: 1250px;
-  margin: auto;
+/* SERVICES GRID */
+.servicesSection {
+  padding: 70px 0;
+}
+
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2.5rem;
+  gap: 25px;
 }
 
 .card {
-  background: white;
-  padding: 2.2rem;
-  border-radius: 1.5rem;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-  border-left: 7px solid #f59e0b;
-  transition: all 0.25s ease;
+  background: rgb(255, 243, 176);
+  padding: 2rem;
+  border-radius: 1.2rem;
+  border-left: 6px solid #f59e0b;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transition: 0.25s ease;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 .cardTitle {
   font-size: 1.4rem;
   font-weight: 700;
-  margin-bottom: 0.7rem;
   color: #1f2937;
+  margin-bottom: 0.5rem;
 }
 
 .cardDesc {
   color: #4b5563;
   line-height: 1.6;
-  font-size: 1rem;
 }
 
 /* CTA */
 .cta {
   background: #1f2937;
   color: white;
+  padding: 80px 0;
   text-align: center;
-  padding: 5rem 1rem;
 }
 
 .ctaTitle {
@@ -78,21 +81,18 @@
 }
 
 .ctaSubtitle {
+  max-width: 600px;
+  margin: 1rem auto 2rem;
   color: #d1d5db;
-  margin: 1rem auto 2.5rem;
-  max-width: 650px;
-  font-size: 1.1rem;
 }
 
 .ctaBtn {
   background: #f59e0b;
-  color: #000;
   padding: 0.9rem 2.6rem;
   border-radius: 9999px;
+  font-size: 1.1rem;
   font-weight: 600;
-  border: none;
-  cursor: pointer;
-  font-size: 1.05rem;
+  color: #000;
   transition: 0.25s ease;
 }
 
@@ -105,11 +105,9 @@
   .heroTitle {
     font-size: 2.2rem;
   }
-
   .heroSubtitle {
     font-size: 1rem;
   }
-
   .ctaTitle {
     font-size: 1.8rem;
   }

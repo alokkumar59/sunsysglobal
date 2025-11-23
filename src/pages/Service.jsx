@@ -14,63 +14,72 @@ export default function ServicesPage() {
   ];
 
   return (
-    <div className={styles.wrapper}>
-
+    <div className={styles.page}>
+      
       {/* HERO */}
       <section className={styles.hero}>
-        <motion.h1
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className={styles.heroTitle}
-        >
-          Our Solar Services
-        </motion.h1>
+        <div className={styles.container}>
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className={styles.heroTitle}
+          >
+            Our Solar Services
+          </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className={styles.heroSubtitle}
-        >
-          Smart. Reliable. Affordable. Tailored for homes, businesses, and industries.
-        </motion.p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            className={styles.heroSubtitle}
+          >
+            Smart. Reliable. Affordable. Tailored for homes, businesses, and industries.
+          </motion.p>
+        </div>
       </section>
 
       {/* SERVICES GRID */}
-      <section className={styles.gridSection}>
-        {services.map((s, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: i * 0.08 }}
-            className={styles.card}
-          >
-            <h3 className={styles.cardTitle}>{s.title}</h3>
-            <p className={styles.cardDesc}>{s.desc}</p>
-          </motion.div>
-        ))}
+      <section className={styles.servicesSection}>
+        <div className={styles.container}>
+
+          <div className={styles.grid}>
+            {services.map((s, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.08 }}
+                className={styles.card}
+              >
+                <h3 className={styles.cardTitle}>{s.title}</h3>
+                <p className={styles.cardDesc}>{s.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+
+        </div>
       </section>
 
       {/* CTA */}
       <section className={styles.cta}>
-        <motion.h2 initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={styles.ctaTitle}>
-          Ready to Go Solar?
-        </motion.h2>
+        <div className={styles.container}>
+          <motion.h2 initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={styles.ctaTitle}>
+            Ready to Go Solar?
+          </motion.h2>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className={styles.ctaSubtitle}
-        >
-          Let Sunsys Global build a world-class solar solution for you.
-        </motion.p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            className={styles.ctaSubtitle}
+          >
+            Let Sunsys Global build a world-class solar solution for you.
+          </motion.p>
 
-        <Link to="/contact" className={styles.ctaBtn}>
-    Contact Us
-  </Link>
-</section>
+          <Link to="/contact" className={styles.ctaBtn}>Contact Us</Link>
+        </div>
+      </section>
+
     </div>
   );
 }
