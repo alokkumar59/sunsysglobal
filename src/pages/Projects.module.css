@@ -29,14 +29,12 @@
     margin: 60px 0 25px;
   }
   
-  /* Projects Grid */
   .projectsGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
   }
   
-  /* Project Card */
   .projectCard {
     background: #fff;
     border-radius: 16px;
@@ -75,13 +73,11 @@
     line-height: 1.5;
   }
   
-  /* Fade-in Animation */
   .fadeIn {
     opacity: 1 !important;
     transform: translateY(0) !important;
   }
   
-  /* CTA */
   .cta {
     background: #fff7e6;
     padding: 60px 20px;
@@ -117,7 +113,6 @@
     background: #eab308;
   }
   
-  /* Responsive */
   @media (max-width: 900px) {
     .projectsGrid {
       grid-template-columns: 1fr;

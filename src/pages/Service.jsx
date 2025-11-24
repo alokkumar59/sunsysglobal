@@ -16,7 +16,6 @@ export default function ServicesPage() {
   return (
     <div className={styles.page}>
       
-      {/* HERO */}
       <section className={styles.hero}>
         <div className={styles.container}>
           <motion.h1
@@ -38,7 +37,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* SERVICES GRID */}
       <section className={styles.servicesSection}>
         <div className={styles.container}>
 
@@ -60,7 +58,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className={styles.cta}>
         <div className={styles.container}>
           <motion.h2 initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={styles.ctaTitle}>

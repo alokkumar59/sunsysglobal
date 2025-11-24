@@ -64,7 +64,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* RIGHT SIDE */}
         <div className={styles.right}>
           <div className={styles.imageWrapper}>
             <img src="/public/assets/logo.jpg" alt="Sunsys Global" />

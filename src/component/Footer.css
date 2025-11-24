@@ -5,7 +5,6 @@
   color: #000;
 }
 
-/* ---------- Platforms Section ---------- */
 .platforms-section {
   padding: 40px 20px;
 }
@@ -48,7 +47,6 @@
   color: #333;
 }
 
-/* ---------- Footer Bottom ---------- */
 .footer-bottom {
   display: flex;
   justify-content: space-around;
@@ -58,7 +56,6 @@
   flex-wrap: wrap;
 }
 
-/* Email links (force black) */
 .footer-bottom a {
   color: #000 !important;
   text-decoration: none;
@@ -88,7 +85,6 @@
   vertical-align: middle;
 }
 
-/* ---------- Social Icons Brand Hover ---------- */
 .icons a {
   color: #000;
   font-size: 1.3rem;
@@ -96,27 +92,19 @@
   transition: color 0.3s;
 }
 
-/* LinkedIn */
 .icons a:nth-child(1):hover {
   color: #0077b5;
 }
 
-/* Instagram */
 .icons a:nth-child(2):hover {
   color: #E4405F;
 }
 
-/* Twitter/X */
-.icons a:nth-child(3):hover {
-  color: #1DA1F2;
-}
 
-/* YouTube */
 .icons a:nth-child(4):hover {
   color: #FF0000;
 }
 
-/* ---------- Copyright ---------- */
 .copyright {
   background-color: #f9c800;
   padding-bottom: 10px;
@@ -132,7 +120,6 @@
   text-decoration: underline;
 }
 
-/* ---------- Responsive ---------- */
 @media (max-width: 768px) {
   .platforms {
       flex-direction: column;

@@ -1,4 +1,4 @@
-# Sunsys Global
+# Sunsys Techsol
 
 **React** and **Vite**
 

@@ -39,13 +39,11 @@ export default function Projects() {
   return (
     <section className={styles.projectsSection}>
       <div className={styles.container}>
-        {/* PAGE HEADER  ____ */}
         <h2 className={styles.heading}>Our Solar Projects</h2>
         <p className={styles.subheading}>
           Demonstrating quality, efficiency, and sustainability through our completed and upcoming projects.
         </p>
 
-        {/* COMPLETED PROJECTS */}
         <h3 className={styles.sectionTitle}>Completed Projects</h3>
         <div className={styles.projectsGrid}>
           {completedProjects.map((p, i) => (
@@ -59,7 +57,6 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* UPCOMING PROJECTS */}
         <h3 className={styles.sectionTitle}>Upcoming Projects</h3>
         <div className={styles.projectsGrid}>
           {upcomingProjects.map((p, i) => (
@@ -73,7 +70,6 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* CTA */}
         <div className={styles.cta}>
           <h2 className={styles.ctaTitle}>Want to Start Your Solar Project?</h2>
           <p className={styles.ctaSubtitle}>

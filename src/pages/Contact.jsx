@@ -1,11 +1,46 @@
 import React from "react";
-import { FaPhoneAlt } from "react-icons/fa";   // <-- REQUIRED IMPORT
+import { FaPhoneAlt } from "react-icons/fa";
 import styles from "./Contact.module.css";
 
 export default function Contact() {
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+
+    const payload = {
+      name: form.name.value,
+      email: form.email.value,
+      phone: form.phone.value,
+      projectType: form.projectType.value,
+      location: form.location.value,
+      message: form.message.value,
+    };
+
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbzJvf7TSYo7wzSpEEtgJXx-BA4GwOkpd22_YzuogrRTO0ptqBGIGad5lZps6vahWRnT/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        }
+      );
+
+      alert("Your request has been submitted!");
+      form.reset();
+    } catch (error) {
+      console.error(error);
+      alert("Form submission failed.");
+    }
+  };
+
   return (
     <section className={styles.contactSection}>
       <div className={styles.container}>
+
         <h2 className={styles.heading}>Get in Touch with Sunsys Global</h2>
         <p className={styles.subheading}>
           Have questions about our solar solutions or want a custom quote? We’re here to help.
@@ -13,44 +48,74 @@ export default function Contact() {
 
         <div className={styles.contentWrapper}>
           
-          {/* CONTACT FORM */}
-          <form className={styles.contactForm} id="quoteForm">
+          <form className={styles.contactForm} id="quoteForm" onSubmit={handleSubmit}>
             <h3 className={styles.formTitle}>Request a Quote</h3>
 
             <div className={styles.formGroup}>
-              <label htmlFor="name">Full Name</label>
-              <input type="text" id="name" placeholder="Your Name" required />
-            </div>
+  <label>Full Name</label>
+  <input
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    required
+    pattern="^[A-Za-z ]+$"
+    title="Only alphabets and spaces are allowed"
+  />
+</div>
 
-            <div className={styles.formGroup}>
-              <label htmlFor="email">Email</label>
-              <input type="email" id="email" placeholder="Your Email" required />
-            </div>
+<div className={styles.formGroup}>
+  <label>Email</label>
+  <input
+    type="email"
+    name="email"
+    placeholder="Your Email"
+    required
+  />
+</div>
 
-            <div className={styles.formGroup}>
-              <label htmlFor="phone">Phone Number</label>
-              <input type="tel" id="phone" placeholder="Your Phone" required />
-            </div>
+<div className={styles.formGroup}>
+  <label>Phone Number</label>
+  <input
+    type="tel"
+    name="phone"
+    placeholder="Your Phone"
+    required
+    pattern="^[0-9]{10}$"
+    title="Enter a valid 10-digit phone number"
+  />
+</div>
 
-            <div className={styles.formGroup}>
-              <label htmlFor="projectType">Project Type</label>
-              <input type="text" id="projectType" placeholder="Residential / Commercial / Industrial" required />
-            </div>
+<div className={styles.formGroup}>
+  <label>Project Type</label>
+  <input
+    type="text"
+    name="projectType"
+    placeholder="Residential / Commercial / Industrial"
+    required
+  />
+</div>
 
-            <div className={styles.formGroup}>
-              <label htmlFor="location">Project Location</label>
-              <input type="text" id="location" placeholder="City / State" required />
-            </div>
+<div className={styles.formGroup}>
+  <label>Project Location</label>
+  <input
+    type="text"
+    name="location"
+    placeholder="City / State"
+    required
+  />
+</div>
 
-            <div className={styles.formGroup}>
-              <label htmlFor="message">Additional Details</label>
-              <textarea id="message" rows="5" placeholder="Your Message / Requirements"></textarea>
-            </div>
-
+<div className={styles.formGroup}>
+  <label>Additional Details</label>
+  <textarea
+    name="message"
+    rows="5"
+    placeholder="Your Message / Requirements"
+  ></textarea>
+</div>
             <button type="submit" className={styles.submitBtn}>Get a Quote</button>
           </form>
 
-          
           {/* CONTACT INFO */}
           <div className={styles.contactInfo}>
             <h3>Contact Information</h3>
@@ -77,7 +142,6 @@ export default function Contact() {
             <h3>Office Hours</h3>
             <p>Mon - Sat: 9:00 AM - 9:00 PM</p>
 
-            {/* MAP */}
             <div className={styles.mapEmbed}>
               <iframe
                 title="Sunsys Global Location"
@@ -87,7 +151,6 @@ export default function Contact() {
                 style={{ border: 0, borderRadius: "10px" }}
                 allowFullScreen=""
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
 

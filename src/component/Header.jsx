@@ -15,10 +15,8 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      {/* Overlay */}
       {menuOpen && <div className={styles.overlay} onClick={closeMenu}></div>}
 
-      {/* Top Bar */}
       <div className={styles.topBar}>
         <div className={styles.topLeft}>
         <span>
@@ -52,13 +50,11 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Navbar */}
       <div className={styles.navbar}>
         <div className={styles.logo}>
           <Link to="/"><img src="/assets/logo.jpg" alt="logo" /></Link>
         </div>
 
-        {/* Hamburger */}
         <div className={styles.hamburger} onClick={toggleMenu}>
           <FaEllipsisV />
         </div>

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       
-      {/* Platforms Section */}
+      
       <section className="platforms-section">
         <h1>Our Other Platforms</h1>
 
@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
       </section>
 
-      {/* Footer Bottom */}
+      
       <div className="footer-bottom">
 
         <div className="contact">

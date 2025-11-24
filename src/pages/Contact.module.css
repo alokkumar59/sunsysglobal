@@ -60,30 +60,29 @@ label {
   color: #111;
 }
 
-/* LIGHT YELLOW INPUTS */
 input,
 textarea {
   padding: 12px 15px;
   font-size: 1rem;
   border-radius: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #0b0b0b;
   outline: none;
   transition: 0.2s;
-  background: #fff8d6; /* light yellow */
+  background: #fff8d6;
+  color: #000 
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: #7a6f3d; /* darker placeholder */
+  color: #434138; 
 }
 
 input:focus,
 textarea:focus {
   border-color: #f3a100;
-  background: #fff3b0; /* slightly deeper yellow on focus */
+  background: #fff3b0; 
 }
 
-/* SUBMIT BUTTON */
 .submitBtn {
   width: 100%;
   background: #f3a100;
@@ -102,7 +101,6 @@ textarea:focus {
   background: #e0a100;
 }
 
-/* CONTACT INFO CARD */
 .contactInfo {
   flex: 1 1 400px;
   background: #fff;
@@ -124,14 +122,12 @@ textarea:focus {
   font-size: 1rem;
 }
 
-/* MAP */
 .mapEmbed {
   margin-top: 20px;
   border-radius: 12px;
   overflow: hidden;
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
   .contentWrapper {
     flex-direction: column;
