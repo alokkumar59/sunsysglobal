@@ -91,12 +91,16 @@ const Footer = () => {
       </div>
 
       <div className="copyright">
-        <p>
-          © 2025 Sunsys. All Rights Reserved. |{" "}
-          <a href="/privacy">Privacy Policy</a> |{" "}
-          <a href="/terms">Terms & Conditions</a>
-        </p>
-      </div>
+  <p>
+    © 2025 Sunsys. All Rights Reserved. |{" "}
+    <a href="/privacy">Privacy Policy</a> |{" "}
+    <a href="/terms">Terms & Conditions</a> |{" "}
+    Developed by{" "}
+    <a href="mailto:studentalokkumar1278@gmail.com" target="_blank" rel="noopener noreferrer">
+      Alok Kumar
+    </a>
+  </p>
+</div>
 
     </footer>
   );

@@ -3,20 +3,19 @@ import styles from "./Projects.module.css";
 
 export default function Projects() {
   const completedProjects = [
-    { title: "Rooftop Solar for School", desc: "Installed a 50kW rooftop solar system at a local school.", img: "/public/assets/servicepage/project1.png" },
-
-    { title: "Industrial Solar Plant", desc: "500kW solar power plant for a manufacturing unit.", img: "/public/assets/servicepage/project2.png" },
-    { title: "Off-Grid Solar Village", desc: "Implemented off-grid solar systems for rural households.", img: "/public/assets/servicepage/project3.png" },
-    { title: "Commercial Rooftop", desc: "120kW rooftop solar system for a shopping complex.", img: "/public/assets/servicepage/project4.png" },
-    { title: "Hybrid Solar System", desc: "Hybrid on-grid & off-grid system for a remote industrial unit.", img: "/public/assets/servicepage/project5.png" },
-    { title: "Solar Consultancy", desc: "Complete project planning and ROI forecasting for corporate clients.", img: "/public/assets/servicepage/project6.png" },
+    { title: "Rooftop Solar for School", desc: "Installed a 50kW rooftop solar system at a local school.", img: "/assets/servicepage/project1.png" },
+    { title: "Industrial Solar Plant", desc: "500kW solar power plant for a manufacturing unit.", img: "/assets/servicepage/project2.png" },
+    { title: "Off-Grid Solar Village", desc: "Implemented off-grid solar systems for rural households.", img: "/assets/servicepage/project3.png" },
+    { title: "Commercial Rooftop", desc: "120kW rooftop solar system for a shopping complex.", img: "/assets/servicepage/project4.png" },
+    { title: "Hybrid Solar System", desc: "Hybrid on-grid & off-grid system for a remote industrial unit.", img: "/assets/servicepage/project5.png" },
+    { title: "Solar Consultancy", desc: "Complete project planning and ROI forecasting for corporate clients.", img: "/assets/servicepage/project6.png" },
   ];
 
   const upcomingProjects = [
-    { title: "Utility Scale Solar Plant", desc: "1MW plant installation scheduled for Q2 2025.", img: "/public/assets/servicepage/project7.png" },
-    { title: "Rooftop Expansion Program", desc: "Expanding rooftop installations in 3 major cities.", img: "/public/assets/servicepage/project8.png" },
-    { title: "Remote Village Electrification", desc: "Off-grid solar setups planned for rural villages.", img: "/public/assets/servicepage/project9.png" },
-    { title: "Industrial Efficiency Upgrade", desc: "Retrofitting older plants with high-efficiency panels.", img: "/public/assets/servicepage/project10.png" },
+    { title: "Utility Scale Solar Plant", desc: "1MW plant installation scheduled for Q2 2025.", img: "/assets/servicepage/project7.png" },
+    { title: "Rooftop Expansion Program", desc: "Expanding rooftop installations in 3 major cities.", img: "/assets/servicepage/project8.png" },
+    { title: "Remote Village Electrification", desc: "Off-grid solar setups planned for rural villages.", img: "/assets/servicepage/project9.png" },
+    { title: "Industrial Efficiency Upgrade", desc: "Retrofitting older plants with high-efficiency panels.", img: "/assets/servicepage/project10.png" },
   ];
 
   useEffect(() => {
