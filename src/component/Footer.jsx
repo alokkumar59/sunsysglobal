@@ -93,6 +93,7 @@ const Footer = () => {
       <div className="copyright">
   <p>
     © 2025 Sunsys. All Rights Reserved. |{" "}
+   
     <a href="/privacy">Privacy Policy</a> |{" "}
     <a href="/terms">Terms & Conditions</a> |{" "}
     Developed by{" "}
