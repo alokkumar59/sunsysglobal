@@ -1,80 +1,67 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./About.module.css";
-import { FaSolarPanel, FaBolt, FaShield, FaLeaf } from "react-icons/fa6";
-
-export default function About() {
-  
-  useEffect(() => {
-    const elements = document.querySelectorAll(`.${styles.featureBox}`);
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add(styles.fadeIn);
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.3 }
-    );
-
-    elements.forEach((el) => observer.observe(el));
-  }, []);
-
+import isoCert from "/assets/logo.jpg";
+const About = () => {
   return (
-    <section className={styles.aboutSection}>
-      <div className={styles.container}>
-        
-        {/* LEFT SIDE */}
-        <div className={styles.left}>
-          <h2 className={styles.heading}>
-            Powering a Sustainable Future with <span>Sunsys Techsol</span>
-          </h2>
-
-          <p className={styles.desc}>
-          Sunsys Techsol delivers high-performance solar solutions for homes, businesses, 
-            and industries across India. Our mission is simple — make clean energy accessible, 
-            affordable, and reliable for everyone.
-          </p>
-
-          <div className={styles.features}>
-            <div className={styles.featureBox}>
-              <FaSolarPanel className={styles.icon} />
-              <h4>High Efficiency Panels</h4>
-              <p>Cutting-edge technology built for maximum output.</p>
-            </div>
-
-            <div className={styles.featureBox}>
-              <FaBolt className={styles.icon} />
-              <h4>24/7 System Monitoring</h4>
-              <p>Real-time energy tracking and performance insights.</p>
-            </div>
-
-            <div className={styles.featureBox}>
-              <FaShield className={styles.icon} />
-              <h4>Guaranteed Safety</h4>
-              <p>Premium installation quality with advanced protection.</p>
-            </div>
-
-            <div className={styles.featureBox}>
-              <FaLeaf className={styles.icon} />
-              <h4>Eco-Friendly Approach</h4>
-              <p>Helping India reduce carbon emissions at scale.</p>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.right}>
-          <div className={styles.imageWrapper}>
-            <img src="/public/assets/logo.jpg" alt="Sunsys Global" />
-            <div className={styles.experienceBox}>
-              <h3>5+ Years</h3>
-              <p>Of Solar Excellence</p>
-            </div>
-          </div>
-        </div>
-
+    <div className={styles.aboutPage}>
+      <div className={styles.headerSection}>
+        <h1>About Sunsys Techsol</h1>
+        <p>Your trusted partner in Solar EPC, IT Services & Workforce Development.</p>
       </div>
-    </section>
+
+      <section className={styles.section}>
+        <h2>Who We Are</h2>
+        <p>
+          Sunsys Techsol Pvt. Ltd. is an ISO 9001:2015 certified LLP 
+          delivering end-to-end solutions in Solar EPC, IT services, workforce 
+          development, and technical training. We focus on reliable engineering, 
+          measurable performance, and practical innovation.
+        </p>
+      </section>
+
+      <section className={styles.section}>
+        <h2>Our Mission</h2>
+        <p>
+          To provide dependable energy, technology, and training solutions that deliver 
+          measurable value to individuals, businesses, and institutions.
+        </p>
+      </section>
+
+      <section className={styles.section}>
+        <h2>Our Vision</h2>
+        <p>
+          To become a trusted name in clean energy, digital transformation, and 
+          competency-based skill development across India.
+        </p>
+      </section>
+
+      <section className={styles.section}>
+        <h2>What We Do</h2>
+        <ul>
+          <li><strong>Solar EPC:</strong> Engineering, installation, commissioning & maintenance.</li>
+          <li><strong>IT Services:</strong> Web/mobile development, cloud deployment & automation.</li>
+          <li><strong>Training:</strong> Solar, IT, and corporate skill development programs.</li>
+        </ul>
+      </section>
+
+      <section className={styles.section}>
+        <h2>Our Core Values</h2>
+        <ul>
+          <li>Quality</li>
+          <li>Reliability</li>
+          <li>Transparency</li>
+          <li>Innovation</li>
+          <li>Customer Focus</li>
+        </ul>
+      </section>
+
+      <section className={styles.certSection}>
+        <h2>Certification</h2>
+        <img src={isoCert} alt="ISO Certificate" className={styles.certImage} />
+        <p>ISO 9001:2015 – Certified by RQC (Radiance Quality Certifications), UK.</p>
+      </section>
+    </div>
   );
-}
+};
+
+export default About;
