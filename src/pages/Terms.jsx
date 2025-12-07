@@ -80,7 +80,7 @@ export default function Terms() {
           If you have any questions regarding these Terms & Conditions, please contact us at:
         </p>
         <p className={styles.contactEmail}>
-          <a href="mailto:support@sunsysglobal.com">support@sunsysglobal.com</a>
+          <a href="mailto:sunsystechsol@gmail.com">sunsystechsol@gmail.com</a>
         </p>
       </div>
     </div>
