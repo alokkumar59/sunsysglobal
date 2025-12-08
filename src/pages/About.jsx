@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./About.module.css";
-import isoCert from "/assets/logo.jpg";
+
 const About = () => {
   return (
     <div className={styles.aboutPage}>
@@ -56,10 +56,16 @@ const About = () => {
       </section>
 
       <section className={styles.certSection}>
-        <h2>Certification</h2>
-        <img src={isoCert} alt="ISO Certificate" className={styles.certImage} />
-        <p>ISO 9001:2015 – Certified by RQC (Radiance Quality Certifications), UK.</p>
-      </section>
+  <h2>Certification</h2>
+  <img
+    src="/assets/ISOCertificate.png"
+    alt="ISO Certificate"
+    className={styles.certImage}
+  />
+  <p>ISO 9001:2015 Certified by RQC (Radiance Quality Certifications), UK.</p>
+</section>
+
+       
     </div>
   );
 };
