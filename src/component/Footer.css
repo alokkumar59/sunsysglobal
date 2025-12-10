@@ -52,7 +52,7 @@
   justify-content: space-around;
   align-items: center;
   background-color: #f9c800;
-  padding: 5px 5px; /* reduced from 25px to 15px */
+  padding: 5px 5px; 
   flex-wrap: wrap;
   
 }
